@@ -1,0 +1,7 @@
+[client]
+host = localhost
+port = 3307
+database = portafolio
+user = sistportafolio
+password = s1st.pyth0n.2022
+default-character-set = utf8
