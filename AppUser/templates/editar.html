@@ -1,0 +1,14 @@
+{% extends "main_template.html" %}
+
+{% load static %}
+
+{% block mainContent %}
+    <h2>Edición del Perfil "{{usuario}}"</h2>
+    <form class="form-control" action="" method="post">
+        {% csrf_token %}
+        <table class="form-control">
+            {{miFormulario.as_table}}
+        </table>
+        <input class="btn btn-primary" type="submit" value="Editar">
+    </form>
+{% endblock %}

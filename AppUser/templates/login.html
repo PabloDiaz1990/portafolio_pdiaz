@@ -1,0 +1,11 @@
+{% extends 'main_template.html' %}
+
+{% load static %}
+
+{% block mainContent %}
+    <form class="form-control" action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button class="btn btn-primary" type="submit">Iniciar Sesión</button>
+    </form>
+{% endblock %}

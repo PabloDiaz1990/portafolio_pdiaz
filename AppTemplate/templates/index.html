@@ -3,5 +3,9 @@
 {% load static %}
 
 {% block mainContent %}
-En este sitio encontrará un resumen sobre mi persona y mi experiencia como desarrollador.
+    {% if request.user.is_authenticated %}
+        {{mensaje}}
+    {% else %}
+        En este sitio encontrará un resumen sobre mi persona y mi experiencia como desarrollador.
+    {% endif %}
 {% endblock %}
