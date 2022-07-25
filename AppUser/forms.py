@@ -10,7 +10,6 @@ class RegistroUsuarioForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
-        help_texts= {k:"" for k in fields}
 
 class EditarUsuarioForm(UserCreationForm):
     email = forms.EmailField(label='Modificar email')
@@ -20,4 +19,3 @@ class EditarUsuarioForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['email', 'password1', 'password2']
-        help_texts = {k:"" for k in fields}
