@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def experiencia(request):
+    return render(request, "experiencia.html")
