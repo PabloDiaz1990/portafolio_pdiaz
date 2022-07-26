@@ -46,7 +46,7 @@ def register_user(request):
 def edit_user(request):
     usuario = request.user
 
-    if request.method == "POST":
+    if request.method == 'POST':
         miFormulario = EditarUsuarioForm(request.POST)
 
         if miFormulario.is_valid():

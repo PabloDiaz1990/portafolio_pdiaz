@@ -14,7 +14,7 @@ class RegistroUsuarioForm(UserCreationForm):
 class EditarUsuarioForm(UserCreationForm):
     email = forms.EmailField(label='Modificar email')
     password1 = forms.CharField(label='Contraseña', widget=forms.PasswordInput)
-    password1 = forms.CharField(label='Repita la contraseña', widget=forms.PasswordInput)
+    password2 = forms.CharField(label='Repita la contraseña', widget=forms.PasswordInput)
 
     class Meta:
         model = User

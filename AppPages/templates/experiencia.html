@@ -3,5 +3,11 @@
 {% load static %}
 
 {% block mainContent %}
-Pages
+    {% for post in posts %}
+        <h4>{{post.title}}</h4>
+        <small class="text-muted">{{post.subtitle}}</small>
+        <p class="text-md-start">{{post.content}}</p>
+        <p class="fs-6">{{post.published}} por <strong>{{post.author}}</strong></p>
+        <br>
+    {% endfor %}
 {% endblock %}
